@@ -1,0 +1,12 @@
+[package]
+name = "cloud-misconfiguration-scanner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-sdk-s3 = "1.57.0" # For interacting with S3
+aws-sdk-iam = "1.48.0" # For IAM role checks
+aws-config = "1.5.8"  # For loading configurations
+aws-types = "1.3.3" # For Region Handling
+tokio = { version = "1.0", features = ["full"] } # Async runtime
+serde_json = "1.0"  # For handling JSON (optional for later)
