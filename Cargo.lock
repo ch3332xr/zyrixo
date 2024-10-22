@@ -110,6 +110,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "aws-sdk-cloudtrail"
+version = "1.49.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c67f940ce8edc30934f146ceb45719b268ef5c36870b75a5272d28f9ec54e064"
+dependencies = [
+ "aws-credential-types",
+ "aws-runtime",
+ "aws-smithy-async",
+ "aws-smithy-http",
+ "aws-smithy-json",
+ "aws-smithy-runtime",
+ "aws-smithy-runtime-api",
+ "aws-smithy-types",
+ "aws-types",
+ "bytes",
+ "http 0.2.12",
+ "once_cell",
+ "regex-lite",
+ "tracing",
+]
+
+[[package]]
 name = "aws-sdk-iam"
 version = "1.48.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -527,18 +549,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "cloud-misconfiguration-scanner"
-version = "0.1.0"
-dependencies = [
- "aws-config",
- "aws-sdk-iam",
- "aws-sdk-s3",
- "aws-types",
- "serde_json",
- "tokio",
-]
 
 [[package]]
 name = "const-oid"
@@ -1854,3 +1864,17 @@ name = "zeroize"
 version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ced3678a2879b30306d323f4542626697a464a97c0a07c9aebf7ebca65cd4dde"
+
+[[package]]
+name = "zyrixo"
+version = "0.1.0"
+dependencies = [
+ "aws-config",
+ "aws-sdk-cloudtrail",
+ "aws-sdk-iam",
+ "aws-sdk-s3",
+ "aws-types",
+ "serde",
+ "serde_json",
+ "tokio",
+]
