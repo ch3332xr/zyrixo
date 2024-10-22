@@ -1,4 +1,4 @@
-# ![ZYRIXO](ZYRIXO.jpg)
+# ![ZYRIXO](ZYRIXO.png)
 #### CloudSec Misconfiguration Scanner 4 AWS*
 
 ## 🚀 Overview
