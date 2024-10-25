@@ -52,8 +52,9 @@
  - Welcome
  - Fork/Branch/Changes/Push to branch
  
-#### 📄 License
- - *TBD*
+## License
+
+This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
 #### 📞 Contact
   - https://github.com/ch3332xr
